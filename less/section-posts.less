@@ -1,0 +1,185 @@
+// main: style.less
+
+.main-posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 753px;
+
+    &-header {
+        margin: 78px auto 0 auto;
+        font-size: 30px;
+        font-family: "Raleway SemiBold";
+        color: #555555;
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    &-caption {
+        display: block;
+        margin: 27px auto;
+        font-size: 16px;
+        font-family: "Montserrat Light";
+        color: #8c8c8c;
+        line-height: 1.75;
+        text-align: center;
+        width: 719px;
+    }
+
+    &-article-wrp {
+        display: flex;
+        align-items: center;
+    }
+
+    &-article {
+        width: 370px;
+        margin: 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        position: relative;
+        min-height: 395px;
+
+        &-calendar {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+
+            &-day {
+                display: block;
+                padding: 8px 0 0 0;
+                text-align: center;
+                background-color: #363636;
+                width: 50px;
+                min-height: 35px;
+                font-size: 24px;
+                font-family: "Montserrat Light";
+                color: #fff;
+                line-height: 0.833;
+            }
+
+            &-month {
+                display: block;
+                padding: 8px 0 0 0;
+                text-align: center;
+                font-size: 12px;
+                font-family: "Roboto Regular";
+                color: rgb(255, 255, 255);
+                line-height: 1.667;
+                background-color: #252525;
+                width: 50px;
+                min-height: 25px;
+            }
+        }
+
+        &-header {
+            margin: 28px 0 0 29px;
+            font-size: 20px;
+            font-family: "Raleway Medium";
+            color: #555555;
+            line-height: 1.2;
+            text-align: left;
+            width: 258px;
+            min-height: 19px;
+        }
+
+        &-caption {
+            margin: 22px 0 0 29px;
+            font-size: 14px;
+            font-family: "Montserrat Light";
+            color: #8c8c8c;
+            line-height: 1.571;
+            text-align: left;
+            width: 301px;
+            min-height: 36px;
+        }
+
+        &-link {
+            margin: 27px 0 0 29px;
+            font-size: 14px;
+            font-family: "Montserrat Light";
+            color: #c7b299;
+            line-height: 1.429;
+            text-align: left;
+            text-decoration: none;
+
+            &:after {
+                display: block;
+                content: '';
+                position: absolute;
+                right: 235px;
+                top: 368px;
+                border: 6px solid transparent;
+                border-left: 5px solid #c7b299;
+
+            }
+            
+            &:hover{
+                color: #fff;
+            }
+            &:hover:after{
+                border-left: 5px solid #fff;
+            }
+
+            &:active{
+                color: red;
+            }
+            &:active:after{
+                border-left: 5px solid red;
+            }
+
+        }
+
+        &:hover &-calendar-day {
+            background-color: #c7b299;
+
+        }
+
+        &:hover &-calendar-month {
+            background-color: #a48d72;
+
+        }
+
+        &:hover &-img {
+            filter: brightness(40%);
+        }
+
+        &:hover &-header {
+            color: #c7b299;
+        }
+
+        &:hover &-caption {
+            color: #fff;
+        }
+
+        &:hover {
+            background-color: #362f2d;
+        }
+    }
+
+    &-btn-wrp {
+        display: flex;
+        justify-content: center;
+        margin: 40px 0;
+    }
+
+    &-backward, &-forward{
+        background: transparent;
+        border: none;
+        padding: 0;
+        margin: 0 4px 0 4px;
+        width: 22px;
+        min-height: 22px;
+        outline: none;
+        &-icon{
+            fill: #d1d1d1;
+        }
+        
+        &:hover &-icon{
+            fill: #cab79f;
+        }
+
+    }
+}

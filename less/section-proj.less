@@ -1,0 +1,215 @@
+// main: style.less
+
+.main-proj {
+    width: @widthSmall;
+    margin: 0 auto;
+    padding: 80px 0 0 0;
+
+    &-header {
+        display: block;
+        margin: auto;
+        font-size: 30px;
+        font-family: "Raleway SemiBold";
+        color: #555555;
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    &-content {
+        display: block;
+        margin: 23px auto 0 auto;
+        font-size: 16px;
+        font-family: "Montserrat Light";
+        color: #8c8c8c;
+        line-height: 1.75;
+        text-align: center;
+        width: 719px;
+        min-height: 44px;
+    }
+
+    &-switches {
+        display: flex;
+        justify-content: center;
+        margin: 40px auto 0 auto;
+
+        &-btn {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0 5px;
+            display: block;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(235, 235, 235);
+            border-radius: 3px;
+            background-color: rgba(17, 17, 17, 0);
+            width: 124px;
+            min-height: 36px;
+            font-size: 14px;
+            font-family: "Montserrat Light";
+            color: #8c8c8c;
+            line-height: 1.5;
+            text-align: center;
+            outline: none;
+
+            &:hover {
+                background-color: #998675;
+                color: black;
+            }
+
+            &:active {
+                color: red;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+.main-proj-articles {
+    margin: 34px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &-item {
+        display: block;
+        position: relative;
+        margin: 15px 15px 15px 15px;
+        width: 370px;
+        min-height: 337px;
+        text-decoration: none;
+        background-color: #fbfaf8;
+
+        &-img {
+            display: block;
+        }
+
+        &-header {
+            position: relative;
+            display: block;
+            margin: 30px 0 0 28px;
+            font-size: 20px;
+            font-family: "Raleway Medium";
+            color: #c7b299;
+            line-height: 1.2;
+            text-align: left;
+        }
+
+        &-header:after {
+            display: block;
+            content: '';
+            position: absolute;
+            right: 297px;
+            top: -68px;
+            border: 28px solid transparent;
+            border-bottom: 10px solid #fbfaf8;
+        }
+
+
+        &-content {
+            display: block;
+            margin: 2px 0 0 29px;
+            font-size: 14px;
+            font-family: "Montserrat Light";
+            color: #d1d1d1;
+            line-height: 1.429;
+        }
+
+        &-btn-link,
+        &-btn-search {
+            width: 26px;
+            min-height: 25px;
+            display: none;
+            border: none;
+            background-color: transparent;
+            position: absolute;
+            top: 30%;
+            left: 39%;
+        }
+
+        &-btn-search {
+            left: 54%;
+        }
+
+        &-btn-search-svg:hover {
+            fill: #c7b299;
+        }
+
+        &-btn-link-svg:hover {
+            fill: #c7b299;
+        }
+
+
+        &-btn-search-svg,
+        &-btn-link-svg {
+            fill: #fff;
+        }
+
+        &:hover button {
+            display: block;
+        }
+
+        &:hover &-img {
+            filter: brightness(20%);
+        }
+
+        &:hover {
+            background-color: #362f2d;
+        }
+
+        &:hover &-header {
+            color: #fff;
+        }
+
+        &:hover &-header:after {
+            border-bottom: 10px solid #362f2d;
+        }
+
+        &:hover &-content {
+            color: #a89682;
+        }
+
+
+    }
+
+    &-button {
+        display: flex;
+        margin: 40px auto 80px auto;
+        justify-items: center;
+        border-radius: 3px;
+        border-color: #998675;
+        background-color: #998675;
+        box-shadow: inset 0px -3px 0px 0px rgba(115, 99, 87, 0.004);
+        width: 170px;
+        min-height: 50px;
+        outline: none;
+
+        &:hover,
+        &:active {
+            border-color: #fff;
+            background-color: #fbfaf8;
+        }
+
+        &-txt {
+            display: block;
+            margin: auto;
+            font-size: 14px;
+            font-family: "Raleway ExtraBold";
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.643;
+            text-align: center;
+        }
+
+        &:hover &-txt {
+            color: #362f2d;
+            outline: none;
+        }
+
+        &:active &-txt {
+            color: red;
+        }
+    }
+}

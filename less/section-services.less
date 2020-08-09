@@ -1,0 +1,67 @@
+// main: style.less
+
+.main-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px auto 0 auto;
+
+}
+
+.main-services-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    width: 270px;
+    min-height: 213px;
+
+    &-svg {
+        margin: auto;
+        fill: #555555;
+    }
+
+    &-header {
+        margin: auto;
+        font-size: 22px;
+        font-family: "Raleway SemiBold";
+        color: #555555;
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+
+    }
+
+    &-content {
+        margin: 0;
+        font-size: 14px;
+        font-family: "Montserrat Light";
+        color: #8c8c8c;
+        line-height: 1.714;
+        text-align: center;
+        width: 266px;
+        min-height: 62px;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        width: 68px;
+        min-height: 2px;
+        background-color: #f1eee9;
+        margin: 30px auto 0 auto;
+        align-self: flex-end;
+    }
+
+    &:hover .main-services-item-header {
+        color: #c7b299;
+    }
+
+    &:hover .main-services-item-svg {
+        fill: #c7b299;
+    }
+    
+    &:hover:after {
+        background-color: #c7b299;
+        width: 70px;
+    }
+}

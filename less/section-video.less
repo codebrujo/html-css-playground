@@ -1,0 +1,83 @@
+// main: style.less
+
+.main-videopresentation {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #ccc;
+
+    &-item {
+        margin: 0;
+        width: 100%;
+    }
+
+    &-txt-wrp {
+        width: 600px;
+        padding: 10px;
+        box-sizing: border-box;
+        top: 209px;
+        position: absolute;
+    }
+
+    &-txt-btn {
+        display: flex;
+        margin: auto;
+        width: 100px;
+        min-height: 100px;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0.2);
+
+        &-icon {
+            margin: auto;
+            fill: #fff;
+        }
+
+        &:hover &-icon {
+            fill: #c7b299;
+        }
+
+        &:active &-icon {
+            fill: red;
+        }
+
+    }
+
+    &-txt-title {
+        display: block;
+        width: 100%;
+        margin: 30px auto 0 auto;
+        font-size: 30px;
+        font-family: "Raleway Medium";
+        color: #fff;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    &-txt-p {
+        font-size: 16px;
+        font-family: "Montserrat Light";
+        color: #fff;
+        line-height: 1.75;
+        text-align: center;
+        width: 560px;
+        min-height: 44px;
+    }
+
+    &-txt-time {
+        display: block;
+        margin: 40px auto 0 auto;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Montserrat Regular";
+        color: rgb(199, 178, 153);
+        line-height: 1.714;
+        text-align: center;
+    }
+}

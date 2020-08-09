@@ -1,0 +1,62 @@
+// main: style.less
+
+.main-mobile {
+    background-image: url("../img/iPhone%20in%20hand.png");
+    background-repeat: no-repeat;
+    background-position: top 79px left 420px; 
+    //    iPhone in hand.png
+    &-wrp{
+        padding: 195px 0 176px 875px;
+        min-height: 323px;
+    }
+
+    &-header {
+        width: 100%;
+        text-align: left;
+        font-size: 30px;
+        font-family: "Raleway SemiBold";
+        color: #555555;
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    &-content {
+        font-size: 16px;
+        font-family: "Montserrat Light";
+        color: #8c8c8c;
+        line-height: 1.75;
+        text-align: left;
+        width: 665px;
+        min-height: 100px;
+    }
+
+    &-list {
+        margin: 40px auto;
+        font-size: 16px;
+        font-family: "Montserrat Light";
+        color: #8c8c8c;
+        line-height: 2;
+        text-align: left;
+        list-style: none;
+
+        &-item {
+            position: relative;
+            padding: 0 0 0 60px;
+            width: 624px;
+            box-sizing: border-box;
+
+            &:before {
+                content: "";
+                display: block;
+                width: 21px;
+                min-height: 21px;
+                 position: absolute;
+                top: 5px;
+                left: 0px;
+                background-image: url("../img/mobile-list-item-icon.svg");
+                background-size: cover;
+            }
+        }
+    }
+}

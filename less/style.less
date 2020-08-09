@@ -1,0 +1,32 @@
+// out: ../css/style.css, compress: false, strictMath: true
+
+@widthAll: 1920px;
+@widthSmall: 1230px;
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: @widthAll;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.clear-both() {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+@import "header.less";
+@import "section-services.less";
+@import "section-screens.less";
+@import "aside-adv.less";
+@import "section-proj.less";
+@import "section-video.less";
+@import "section-mobile.less";
+@import "section-achievements.less";
+@import "section-posts.less";
+@import "section-partners.less";
