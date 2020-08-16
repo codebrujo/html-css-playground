@@ -1556,6 +1556,9 @@ body {
   .main-posts-article {
     margin: 0 auto;
   }
+  .main-posts-article-link:after {
+    top: 6px;
+  }
 }
 @media (max-width: 480px) {
   .main-partners-link {
