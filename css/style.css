@@ -1594,4 +1594,14 @@ body {
   .footer-copyright-wrp:last-child {
     margin: 0 auto 20px auto;
   }
+  .footer-copyright-txt {
+    padding: 0 6px 0 6px;
+  }
+  .footer-copyright-txt:first-child {
+    padding: 0 6px 0 0;
+  }
+  .footer-copyright-txt:last-child {
+    padding: 0 0 0 6px;
+    border-right: none;
+  }
 }
