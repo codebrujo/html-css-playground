@@ -1554,7 +1554,7 @@ body {
     flex-direction: column;
   }
   .main-posts-article {
-    margin: 0 auto;
+    margin: 10px auto;
   }
   .main-posts-article-link:after {
     top: 6px;
