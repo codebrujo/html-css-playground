@@ -2,6 +2,8 @@
 
 @widthAll: 1920px;
 @widthSmall: 1230px;
+@mediaPortMax: 480px;
+@import "fonts.less";
 
 body {
     margin: 0;
@@ -11,6 +13,14 @@ body {
     width: @widthAll;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+.invisible {
+    display: none;
+}
+
+.fixed {
+    position: fixed;
 }
 
 .clear-both() {
@@ -30,3 +40,13 @@ body {
 @import "section-achievements.less";
 @import "section-posts.less";
 @import "section-partners.less";
+@import "footer.less";
+@import "media-common.less";
+@import "media-header.less";
+@import "media-services.less";
+@import "media-proj.less";
+@import "media-videopresentation.less";
+@import "media-mobile.less";
+@import "media-posts.less";
+@import "media-partners.less";
+@import "media-footer.less";

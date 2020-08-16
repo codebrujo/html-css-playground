@@ -1,5 +1,21 @@
 // main: style.less
 
 .main-partners{
-    
+    background-image: url('../img/partners_background.png');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    width: 100%;
+    min-height: 490px;
+    background-color: #3d3f42;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    &-link{
+        display: block;
+        margin: 0 45px 0 45px;
+        &:hover{
+            filter: brightness(60%);
+        }
+    }
 }
